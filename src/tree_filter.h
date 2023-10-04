@@ -10,7 +10,7 @@ class TreeFilterProxyModel : public QSortFilterProxyModel {
   using QSortFilterProxyModel::QSortFilterProxyModel;
 
  protected:
-  [[nodiscard]] bool filterAcceptsRow(int row, const QModelIndex& parent) const override;
+  bool filterAcceptsRow(int row, const QModelIndex& parent) const Q_DECL_OVERRIDE;
 };
 
 

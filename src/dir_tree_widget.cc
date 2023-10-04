@@ -28,9 +28,10 @@ void DirTreeWidget::SetupTreeView() {
 
   fsystem_model_->setRootPath(QDir::homePath());
   fsystem_model_->setFilter(QDir::AllDirs | QDir::AllEntries | QDir::NoDotAndDotDot | QDir::Hidden);
+#if (QT_VERSION >= QT_VERSION_CHECK(5,12,0))
   fsystem_model_->setOption(QFileSystemModel::DontUseCustomDirectoryIcons);
   fsystem_model_->setOption(QFileSystemModel::DontWatchForChanges);
-
+#endif
   proxy_model_->setSourceModel(fsystem_model_);
   proxy_model_->setFilterKeyColumn(0);
   proxy_model_->setRecursiveFilteringEnabled(true);
@@ -50,8 +51,11 @@ void DirTreeWidget::SetupTreeView() {
 }
 
 void DirTreeWidget::FilterSlot() {
+#if (QT_VERSION >= QT_VERSION_CHECK(5,12,0))
   proxy_model_->setFilterRegularExpression(ui_->line_edit->text());
-
+#else
+  proxy_model_->setFilterRegExp(ui_->line_edit->text());
+#endif
   SetHomePath();
 }
 

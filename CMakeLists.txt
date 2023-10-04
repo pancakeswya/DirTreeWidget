@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+﻿cmake_minimum_required(VERSION 3.5)
 
 project(dirtreewidget VERSION 0.1 LANGUAGES CXX)
 
@@ -15,10 +15,10 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
-        src/main.cpp
+        src/main.cc
         src/tree_filter.cc
         src/tree_filter.h
-        src/dir_tree_widget.cpp
+        src/dir_tree_widget.cc
         src/dir_tree_widget.h
         src/dir_tree_widget.ui
 )
