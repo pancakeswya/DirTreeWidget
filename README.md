@@ -1,2 +1,9 @@
 # DirTreeWidget
-DirTreeWidget implementation and filtering
+DirTreeWidget реализация виджета для отображения дерева файловой системы начиная с папки пользователя.
+
+Для использования сборки через cmake нужно изменить переменную BUILDER в мейкфал на cmake
+```
+    BUILDER := cmake
+```
+### Пример использования
+![](misc/astro.gif)
