@@ -17,15 +17,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     src/main.cc \
-    src/dir_tree_widget.cc \
-    src/tree_filter.cc
+    src/widget/dir_tree_widget.cc \
+    src/widget/tree_filter.cc
 
 HEADERS += \
-    src/dir_tree_widget.h \
-    src/tree_filter.h
+    src/widget/dir_tree_widget.h \
+    src/widget/tree_filter.h
 
 FORMS += \
-    src/dir_tree_widget.ui
+    src/widget/dir_tree_widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

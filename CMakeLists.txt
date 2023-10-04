@@ -16,11 +16,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
 set(PROJECT_SOURCES
         src/main.cc
-        src/tree_filter.cc
-        src/tree_filter.h
-        src/dir_tree_widget.cc
-        src/dir_tree_widget.h
-        src/dir_tree_widget.ui
+        src/widget/tree_filter.cc
+        src/widget/tree_filter.h
+        src/widget/dir_tree_widget.cc
+        src/widget/dir_tree_widget.h
+        src/widget/dir_tree_widget.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

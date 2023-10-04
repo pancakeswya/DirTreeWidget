@@ -1,4 +1,4 @@
-#include "dir_tree_widget.h"
+#include "widget/dir_tree_widget.h"
 
 #include <QApplication>
 
