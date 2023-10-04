@@ -12,7 +12,7 @@ APP          := $(NAME).app
 RUN          := open $(BUILD_DIR)/$(APP)
 endif
 
-BUILDER      := cmake
+BUILDER      := qmake
 
 MAKEFLAGS    += --no-print-directory
 
