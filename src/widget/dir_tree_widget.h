@@ -20,7 +20,7 @@ class DirTreeWidget : public QWidget {
 
  public:
   explicit DirTreeWidget(QWidget *parent = nullptr);
-  ~DirTreeWidget() override;
+  ~DirTreeWidget() Q_DECL_OVERRIDE;
  private slots:
   void FilterSlot();
  private:
