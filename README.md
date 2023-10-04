@@ -6,4 +6,4 @@ DirTreeWidget реализация виджета для отображения 
     BUILDER := cmake
 ```
 ### Пример использования
-![](misc/astro.gif)
+![](misc/widget_example.gif)
